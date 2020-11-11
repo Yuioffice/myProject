@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+body{
+    font-family: "微软雅黑";
+    font-size: 12px;
+    cursor: default;
+    flex-direction: column;
+}
+.header_1{
+    height: 30px;
+    background: #2f2f2f;
+}
+.bg{
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+}
+.header_left{
+    height: 20px;
+    padding-top: 5px;
+    float: left;
+    width: 200px;
+}
+.header_left img{
+    position: relative;
+    float: right;
+}
+.header_left img:hover{
+    cursor: pointer;
+}
+.header_left input{
+    float: left;
+    height: 20px;
+    position: absolute;
+}
+.header_right{
+    line-height: 30px;
+    text-align: center;
+    float: right;
+    display: flex;
+}
+.header_right p{
+    margin-right: 10px;
+    color:  #8b8b8b;
+}
+.header_right p:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.header_2{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: auto auto;
+}
+.header_2 .top{
+    display: flex;
+    height: 80px;
+    width:100%;
+    margin:5px auto;
+}
+.header_2 .top_left{
+    display: flex;
+    height: 100%;
+}
+.header_2 .top_left p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #6a6a6a;
+    width: 180px;
+    line-height: 80px;
+    text-align: center;
+}
+.header_2 .top_right{
+    margin-left:800px;
+    margin-top: 25px;
+}
+.top_right img{
+    margin-right: 5px;
+}
+.top_right img:hover{
+    cursor: pointer;
+}
+.header_2 .bottom{
+    width:80%;
+    height: 50px;
+    margin:5px auto;
+
+}
+.bottom ul{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.bottom ul li{
+    height: 70%;
+    width: 100%;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+}
+.bottom ul li:hover {
+    transition: 1s ease-out;
+
+}
+.bottom ul li:hover a{
+    color: #FDCC80;
+}
+.bottom ul li .list{
+    flex-direction: column;
+    height: 120px;
+}
+.bottom ul li .list li{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #fde1b6;
+    display: none;
+    z-index: 2;
+}
+.bottom ul li:hover .list li{
+    display: block;
+}
+.bottom ul li:hover .list li a{
+    color: #2f2f2f;
+}
+.bottom ul li:hover .list li:hover{
+    background:#B2BD6D;
+    transition: 1s ease-out;
+}
+.bottom ul li:hover .list li:hover a{
+    color: #fff;
+}
+.bottom ul li .list_2{
+    flex-direction: column;
+    height: 120px;
+}
+.bottom ul li .list_2 li{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #fde1b6;
+    display: none;
+    z-index: 2;
+}
+.bottom ul li:hover .list_2 li{
+    display: block;
+}
+.bottom ul li:hover .list_2 li a{
+    color: #2f2f2f;
+}
+.bottom ul li:hover .list_2 li:hover{
+    background:#B2BD6D;
+    transition: 1s ease-out;
+}
+.bottom ul li:hover .list_2 li:hover a{
+    color: #fff;
+}
+.bottom ul li span{
+    margin-right: 5px;
+}
+/*nav*/
+nav{
+    height: 240px;
+    min-width: 1200px;
+    margin: auto auto;
+
+}
+nav .banner{
+    height: 240px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute ;
+}
+nav img{
+    width: 100%;
+    margin-top: -10px;
+}
+nav .font{
+    width:50%;
+    position:relative;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 48px;
+    color: #626a30;
+    font-family: "方正卡通简体";
+}
+nav p:nth-child(1){
+    float: left;
+    margin-top: 50px;
+}
+nav p:nth-child(2){
+    float: right;
+}
+
+/*section*/
+section{
+    flex-direction: column;
+}
+.plate {
+    min-width: 1200px;
+    margin: 0 auto;
+}
+.plate .title{
+    width: 1200px;
+    margin: 30px auto 0 auto;
+    font-family: "方正卡通简体";
+    font-size: 30px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #fdcc80;
+}
+.plate .title p{
+    display: inline;
+    margin-right: 5px;
+}
+.plate .title span{
+    font-family: "苹方 常规";
+    font-size:16px;
+    font-weight: normal;
+    float: right;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+.plate .title span:hover{
+    color: #2f2f2f;
+}
+.plate .contain .ctn{
+    width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.plate .contain{
+min-width: 1200px;
+    background: #fffec8;
+}
+.plate .contain .din{
+    width: 370px;
+    height: 300px;
+    overflow: hidden;
+    margin-top: 30px;
+    text-align: center;
+    flex-direction: column;
+}
+.plate .contain .din .intr a p{
+    margin: -60px 0 0 10px;
+    text-align: center;
+    width: 350px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    display: none;
+    transition: all 1s ease-out;
+}
+.plate .contain .din .intr a .img{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background-color: black;
+}
+.plate .contain .din .intr a .img  img{
+    transition: all 1s ease-out;
+}
+.plate .contain .din .intr a:hover .img img{
+    transform: scale(1.1);
+   opacity: 0.6;
+    transition: all 1s ease-out;
+}
+.plate .contain .din .intr a:hover p{
+    display: block;
+    transition: all 1s ease-out;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.plate .contain .din .word{
+    margin-top: 20px;
+
+}
+.plate .contain .din .word a h1{
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-wrap: none;
+    font-size: 16px;
+}
+.plate .contain .din .word a:hover{
+    color: #6a6a6a;
+}
+.plate .contain .din .word p a,span{
+    color: #878787;
+}
+.plate .contain .din .word p a:hover{
+    color: #2f2f2f;
+}
+.plate .contain .din .word p span{
+    margin-left: 100px;
+}
+.plate .contain .din .intr .img img{
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+.bottom{
+    margin: 30px 0;
+}
+.bottom input{
+    width: 200px;
+    height: 35px;
+    background:#fdcc80;
+    font-size: 14px;
+    border: 2px solid #fde2a8;
+}
+.bottom input:hover{
+    color: #fff8f2;
+    background:#B2BD6D;
+    border: 2px solid #b9bd98;
+}
+
+
+    /*footer*/
+footer{
+    display: flex;
+    min-width: 1200px;
+    height: 260px;
+    background: #2f2f2f;
+}
+.footer{
+    display: flex;
+    width: 1200px;
+    margin: auto auto;
+}
+.f_title{
+    width: 150px;
+    font-size: 16px;
+    color: #fff;
+}
+.f_title ul li{
+    line-height: 30px;
+}
+.f_title ul li a{
+    color: #919191;
+    font-size: 12px;
+}
+.f_title  ul li:hover a{
+    color: #fff;
+}
+.conn{
+    width: 300px;
+    font-size: 16px;
+    color: #fff;
+}
+.conn ul li{
+    line-height: 30px;
+    color: #919191;
+    font-size: 12px;
+}
+.conn ul li:nth-child(1){
+    font-size: 16px;
+    color: #fff;
+}
+footer img{
+    position: relative;
+    margin:auto 0 auto 350px;
+}
+.bottom ul li:hover .line{
+    width:100px;
+}
+.bottom ul li .line{
+    width:0px;
+    height:5px;
+    border-radius:5px;
+    background-color:#FDCC80;
+    margin:0 auto;
+    position:absolute;
+    right:0px;
+    transition:width 0.5s linear;
+}
+.bottom ul li .l1{
+    left:-820px;
+}
+.bottom ul li .l2{
+    left:-270px ;
+}
+.bottom ul li .l3{
+    left: 5px;
+}
+.bottom ul li .l4{
+    left: 555px;
+}
+.bottom ul li .l5{
+    left: 830px;
+}
+.bottom ul li:hover .l5{
+    width: 140px;
+}
+.bottom ul li:before{
+    content:"";
+    display:table;
+}
